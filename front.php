@@ -10,8 +10,9 @@ $footer = '<footer>adios</footer>';
 include('vendor/mustache/Mustache.php');
 
 $engine = new Mustache;
+$engine=>template_file = 'templates/layout.html.mustache';
+
 echo $engine->render(
-	'templates/layout.html.mustache',
 	array(
 		$page_title,
 		$header,
