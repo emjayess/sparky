@@ -1,0 +1,6 @@
+[submodule "vendor/sparkapi"]
+	path = vendor/sparkapi
+	url = git://github.com/sparkapi/sparkapi4p2.git
+[submodule "vendor/mustache"]
+	path = vendor/mustache
+	url = git://github.com/bobthecow/mustache.php.git
