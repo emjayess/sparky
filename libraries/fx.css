@@ -1,0 +1,26 @@
+.anchor-overflow {
+	text-overflow: ellipsis;
+}
+
+.doc-shadow {
+	height: 35px;
+	margin: 0 240px;
+	background: url(images/doc_shadow.png) repeat-x;
+}
+.doc-shadow-left {
+	width: 240px;
+	height: 35px;
+	background: url(images/doc-shadow-left.png) no-repeat;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+}
+.doc-shadow-right {
+	width: 240px;
+	height: 35px;
+	float: right;
+	margin: 0 -240px 0 0;
+	background: url(images/doc-shadow-right.png) no-repeat;
+	overflow: hidden;
+	position: relative;
+}

@@ -1,0 +1,22 @@
+{{! template for search result listings }}
+
+<!--<h2>Listings</h2>-->
+<table class="collection">
+	<caption>~ search results ~</caption>
+	<thead>
+		<th>MLS <br/><small>number</small></th>
+		<th>MLS <br/><small>status</small></th>
+		<th>list <br/><small>price</small></th>
+		<th>address <br/>&nbsp;</th>
+		<th>city <br/>&nbsp;</th>
+		<th>state <br/><small>or&nbsp;province</small></th>
+	</thead>
+	<tbody>
+	{{#listings}}
+		{{>listing_summary}}
+	{{/listings}}
+	{{^listings}}
+		<p>no listings match the search criteria :(</p>
+	{{/listings}}
+	</tbody>
+</table>

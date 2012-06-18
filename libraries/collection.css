@@ -1,0 +1,9 @@
+table.collection {}
+
+table.collection thead {
+	position:static;
+}
+
+table.collection td:first-child {
+	white-space: nowrap;
+}
