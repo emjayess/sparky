@@ -2,8 +2,18 @@
 <div class="listing">
 	<h3>{{listing_name}}</h3>
 	<img src="{{img_src}}" alt="{{img_alt}}"/>
-	<p>MLS#: {{ListingId}}</p>
-	<p>Price: {{ListPrice}}</p>
+	<p>MLS #: {{StandardFields.ListingId}}</p>
+	<p>Price: $ {{StandardFields.ListPrice}}</p>
 	<p>Address: {{>address}}</p>
-	<p>Status: {{MlsStatus}}</p>
+	<p>Status: {{StandardFields.MlsStatus}}</p>
+	<p>Remarks: {{StandardFields.PublicRemarks}}</p>
+	<p>Photos:</p>
+	<div class="photos">
+	{{#photos}}
+		<span>
+			<p>{{Name}}</p>
+			<img src="{{Uri300}}" title="{{Name}}"/>
+		</span>
+	{{/photos}}
+	</div>
 </div>

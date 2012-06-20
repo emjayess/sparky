@@ -1,9 +1,11 @@
-table.collection {}
-
-table.collection thead {
+table.listings thead {
 	position:static;
 }
 
-table.collection td:first-child {
+table.listings td:first-child {
 	white-space: nowrap;
+}
+
+table.listings tr:hover {
+	background-color: turquoise;
 }

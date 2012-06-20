@@ -13,8 +13,6 @@
 	<link rel="stylesheet" href="libraries/main.css">
 	<link rel="stylesheet" href="libraries/index.css">
 	<link rel="stylesheet" href="libraries/collection.css">
-	<!-- All JavaScript at the bottom, except for Modernizr / Respond -->
-	<script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body class="sparky">
 	<div id="ribbon" class="topbar"></div>
@@ -25,42 +23,18 @@
 				<h1>multiple listings <small>&lt;alpha&gt;</small></h1>
 			</div>
 			<div class="row">
-				<div class="span12">
-					{{>search_form}}
-					{{>listings}}
-					{{>paginate}}
+				<div class="span16">
+					<div>{{>search_form}}</div>
+					{{#total_pages}}
+					<div>{{>paginate}}</div>>
+					<div>{{>listings}}</div>
+					<div>{{>paginate}}</div>
+					{{/total_pages}}
 				</div>
-				<!--
-				<div class="span6">
-					<h3>metadata</h3>
-					<style>
-						pre {line-height:.8em}
-					</style>
-					<pre>
-					</pre>
-				</div>
-				-->
-				{{!>paginate}}
 			</div>
-
 		</div>
-		
-		<ul id="docs"></ul>
-
 		{{>footer}}
-	</div> <!-- /container -->
+
+	</div>
 </body>
-
-<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
-<!-- libraries-sourced scripts 
-<script src="libraries/jquery.mustache.js"></script>
-<script src="libraries/sugar-1.1.1.min.js"></script>
-<script src="libraries/twbootstrap.dropdown.js"></script>
--->
-<script>
-	// enrich pagination
-</script>
 </html>

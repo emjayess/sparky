@@ -1,16 +1,15 @@
 <style>
 	label, input {margin: 4px;}
 </style>
-<form method="POST" action="/" style="background-color:transparent" class="pull-right">
+
+<form method="post" action="/list" style="background-color:transparent">
 	<div>
 		<label for="min">min list price:</label>
-		&nbsp;$<input type="text" id="min" name="min" value="80,000"/>
-		<small>(USD)</small>
+		&nbsp;$<input type="text" id="min" name="min" value="80000.00"/>
 	</div>
 	<div>
 		<label for="max">max list price:</label>
-		&nbsp;$<input type="text" id="max" name="max" value="200,000"/>
-		<small>(USD)</small>
+		&nbsp;$<input type="text" id="max" name="max" value="200000.00"/>
 	</div>
-	<input type="submit" class="pull-right" style="margin-right:40px" value="Find!"/>
+	<input type="submit" style="margin-left:200px; padding:5px 55px" value="list! &rarr;"/>
 </form>

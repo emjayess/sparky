@@ -4,10 +4,10 @@
 </div>-->
 
 <tr>
-	<td>{{StandardFields.ListingId}}</td>
+	<td><a href="/listing/{{Id}}">{{StandardFields.ListingId}}</a></td>
 	<td>{{StandardFields.MlsStatus}}</td>
 	<td><strong>${{StandardFields.ListPrice}}</strong></td>
-	<td><a href="/listings/{{Id}}">{{StandardFields.MLSAreaMinor}}</a></td>
+	<td>{{>address}}</td>
 	<td>{{StandardFields.City}}</td>
 	<td>{{StandardFields.StateOrProvince}}</td>
 </tr>

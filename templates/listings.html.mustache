@@ -1,8 +1,5 @@
 {{! template for search result listings }}
-
-<!--<h2>Listings</h2>-->
-<table class="collection">
-	<caption>~ search results ~</caption>
+<table class="listings">
 	<thead>
 		<th>MLS <br/><small>number</small></th>
 		<th>MLS <br/><small>status</small></th>
@@ -15,8 +12,8 @@
 	{{#listings}}
 		{{>listing_summary}}
 	{{/listings}}
-	{{^listings}}
-		<p>no listings match the search criteria :(</p>
-	{{/listings}}
 	</tbody>
 </table>
+{{^listings}}
+	<p>no listings match the search criteria :(</p>
+{{/listings}}
