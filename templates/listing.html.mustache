@@ -1,19 +1,52 @@
-{{! template for individual listings}}
-<div class="listing">
-	<h3>{{listing_name}}</h3>
-	<img src="{{img_src}}" alt="{{img_alt}}"/>
-	<p>MLS #: {{StandardFields.ListingId}}</p>
-	<p>Price: $ {{StandardFields.ListPrice}}</p>
-	<p>Address: {{>address}}</p>
-	<p>Status: {{StandardFields.MlsStatus}}</p>
-	<p>Remarks: {{StandardFields.PublicRemarks}}</p>
-	<p>Photos:</p>
-	<div class="photos">
-	{{#photos}}
-		<span>
-			<p>{{Name}}</p>
-			<img src="{{Uri300}}" title="{{Name}}"/>
-		</span>
-	{{/photos}}
+<!DOCTYPE html>
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="spark platform concept implementation" />
+	<title>Sparky 0.0.1</title>
+  
+	<link rel="stylesheet" href="/libraries/twbootstrap.css">
+	<link rel="stylesheet" href="/libraries/normalize.css">
+	<link rel="stylesheet" href="/libraries/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="/libraries/main.css">
+	<link rel="stylesheet" href="/libraries/index.css">
+	<link rel="stylesheet" href="/libraries/collection.css">
+</head>
+<body class="sparky">
+	<div class="container">
+	
+		<div class="content">
+			<div class="page-header">
+				<!--@todo font-awesome home icon-->
+				<h1><a href="/"><i class="icon-home"></i></a> multiple listings <small>&lt;alpha&gt;</small></h1>
+			</div>
+			<div class="row">
+				<div class="span16">
+
+					<div class="listing">
+						<h3>{{listing_name}}</h3>
+						<p>MLS #: {{StandardFields.ListingId}}</p>
+						<p>Price: $ {{StandardFields.ListPrice}}</p>
+						<p>Address: {{>address}}</p>
+						<p>Status: {{StandardFields.MlsStatus}}</p>
+						<p>Remarks: {{StandardFields.PublicRemarks}}</p>
+						<p>Photos:</p>
+						<div class="photos">
+						{{#photos}}
+							<span>
+								<p>{{Name}}</p>
+								<img src="{{Uri300}}" title="{{Name}}"/>
+							</span>
+						{{/photos}}
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		{{>footer}}
+
 	</div>
-</div>
+</body>
+</html>

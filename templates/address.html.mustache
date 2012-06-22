@@ -5,7 +5,9 @@
 	{{StandardFields.StreetDirSuffix}}
 	{{StandardFields.StreetSuffix}}
 	{{StandardFields.UnitNumber}}
-	{{StandardFields.City}},
-	{{StandardFields.StateOrProvince}}
-	{{StandardFields.Country}}
-	{{StandardFields.PostalCode}}
+	{{#show_full_address}}
+	 {{StandardFields.City}},
+	 {{StandardFields.StateOrProvince}}
+	 {{!StandardFields.Country}}
+	 {{StandardFields.PostalCode}}
+	{{/show_full_address}}

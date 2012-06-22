@@ -6,28 +6,29 @@
 	<meta name="description" content="spark platform concept implementation" />
 	<title>Sparky 0.0.1</title>
   
-  	<!-- @Todo: concatenate + minify css via build step -->
 	<link rel="stylesheet" href="libraries/twbootstrap.css">
 	<link rel="stylesheet" href="libraries/normalize.css">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin+Sketch|Coda|Special+Elite">	
+	<link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="libraries/main.css">
 	<link rel="stylesheet" href="libraries/index.css">
 	<link rel="stylesheet" href="libraries/collection.css">
 </head>
 <body class="sparky">
-	<div id="ribbon" class="topbar"></div>
 	<div class="container">
 	
 		<div class="content">
 			<div class="page-header">
-				<h1>multiple listings <small>&lt;alpha&gt;</small></h1>
+				<!--@todo font-awesome home icon-->
+				<h1><a href="/"><i class="icon-home"></i></a> multiple listings <small>&lt;alpha&gt;</small></h1>
 			</div>
 			<div class="row">
 				<div class="span16">
 					<div>{{>search_form}}</div>
 					{{#total_pages}}
-					<div>{{>paginate}}</div>>
-					<div>{{>listings}}</div>
+					<div>{{!>paginate}}</div>
+					<div>
+						{{>listings}}
+					</div>
 					<div>{{>paginate}}</div>
 					{{/total_pages}}
 				</div>

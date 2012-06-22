@@ -12,7 +12,7 @@
 	$auth = $spark->Authenticate();// or die('fail');
 
 	if ($auth === false) {
-	        echo "<p>Api Error Code: {$spark->last_error_code}</pr>";
+	        echo "<p>Api Error Code: {$spark->last_error_code}</p>";
 	        echo "<p>Api Error Message: {$spark->last_error_mess}</p>";
 	        exit;
 	}

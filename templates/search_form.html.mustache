@@ -1,15 +1,17 @@
 <style>
-	label, input {margin: 4px;}
+	button, input {width: 100px;}
+	button, label, input {margin: 4px;}
+	form#list button {margin-left:162px; padding:5px 5px;}
 </style>
 
-<form method="post" action="/list" style="background-color:transparent">
+<form id="list" method="get" action="/list" style="background-color:transparent">
 	<div>
 		<label for="min">min list price:</label>
-		&nbsp;$<input type="text" id="min" name="min" value="80000.00"/>
+		&nbsp;$<input type="text" id="min" name="min" value="{{querymin}}" />
 	</div>
 	<div>
 		<label for="max">max list price:</label>
-		&nbsp;$<input type="text" id="max" name="max" value="200000.00"/>
+		&nbsp;$<input type="text" id="max" name="max" value="{{querymax}}" />
 	</div>
-	<input type="submit" style="margin-left:200px; padding:5px 55px" value="list! &rarr;"/>
+	<button class="btn"><i class="icon-search"></i> list</button>
 </form>

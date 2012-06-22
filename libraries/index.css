@@ -1,7 +1,17 @@
 /* Override some defaults */
 html, body {
 	background-color: #eee;
-	font-family: Coda, Helvetica, sans-serif;
+	font-family: "Segoe Light", "Ubuntu Light", "DejaVu Sans Light", Helvetica, sans-serif, FontAwesome;
+}
+
+h1 > a,
+h1 > a:hover,
+h1 > a:focus {
+	text-decoration: none;
+}
+h1 > a:hover,
+h1 > a:focus {
+	color: blue;
 }
 
 .container > footer p {

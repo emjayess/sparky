@@ -1,3 +1,7 @@
+.listings {
+	margin: 8px 4px;
+	border: 1px solid #ccc;
+}
 table.listings thead {
 	position:static;
 }
@@ -6,6 +10,11 @@ table.listings td:first-child {
 	white-space: nowrap;
 }
 
-table.listings tr:hover {
-	background-color: turquoise;
+table.listings thead tr {
+	background-color:#ddd;
+	border-bottom: 1px solid #ccc;
+}
+
+table.listings tbody tr:hover {
+	background-color: #eee;
 }

@@ -10,7 +10,7 @@
 
 	// set up templating w/mustache:
 	$m = new Mustache;
-	$partials = new MustacheLoader('templates', 'html.mustache');
+	$templates['partials'] = new MustacheLoader('templates', 'html.mustache');
 	$templates['index'] = file_get_contents('templates/index.html.mustache');
 	$templates['listing'] = file_get_contents('templates/listing.html.mustache');
 	$templates['listings'] = file_get_contents('templates/listings.html.mustache');
